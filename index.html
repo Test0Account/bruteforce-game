@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bruteforce Battle</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>🧠 BRUTEFORCE <span class="highlight">BATTLE</span></h1>
+
+  <div id="mainMenu">
+    <input id="wordInput" maxlength="20" placeholder="Enter word (max 20)" />
+    <button onclick="startBot()">Start!</button>
+    <p>Current Score: <span id="score">0</span></p>
+  </div>
+
+  <div id="gameArea" style="display: none;">
+    <div id="botOutput">Bot: <span id="botResult"></span></div>
+    <div id="botTimer">Bot Time: <span id="botTime">0.00</span>s</div>
+  </div>
+
+  <div id="playerTurn" style="display: none;">
+    <input id="playerInput" placeholder="Your turn! Type fast!" />
+    <button onclick="submitPlayer()">Submit</button>
+    <div id="playerTimer">Your Time: <span id="playerTime">0.00</span>s</div>
+  </div>
+
+  <div id="resultArea" style="display: none;">
+    <h2 id="resultMsg"></h2>
+    <button onclick="resetGame()">Main Menu</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
